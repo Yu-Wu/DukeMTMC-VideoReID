@@ -16,8 +16,7 @@ In the testing set, we pick one query tracklet for each ID in each camera and pu
 |./query_split  | The query tracklets. Each of them is from different identities in different cameras.|
 |./gallery_split  | The gallery_split tracklets.|
 
-### Directory Structure
-Followings is the directory structure for DukeMTMC-VideoReID. 
+**Directory Structure.** Followings is the directory structure for DukeMTMC-VideoReID. 
 > Splits
 >> Person ids
 >>> Tracklet ids
