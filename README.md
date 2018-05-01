@@ -16,6 +16,14 @@ In the testing set, we pick one query tracklet for each ID in each camera and pu
 |./query_split  | The query tracklets. Each of them is from different identities in different cameras.|
 |./gallery_split  | The gallery_split tracklets.|
 
+### Directory Structure
+Followings is the directory structure for DukeMTMC-VideoReID. 
+> Splits
+>> Person ids
+>>> Tracklet ids
+>>>> Frame images
+
+
 **Naming Rules.** For frame "0001C6F0099X30823.jpg" from tracklet id 0003 of person id 0001,
 "0001" is the identity. "C6" indicate it from Camera 6. "F0099" means it is the 99th frame in the tracklet. 
 "X30823" is the 30823th frame in the video of Camera 6.
