@@ -1,6 +1,7 @@
+
 # DukeMTMC-VideoReID
 
-DukeMTMC-VideoReID is a subset of the [DukeMTMC](http://vision.cs.duke.edu/DukeMTMC/) for video-based re-identification.
+DukeMTMC-VideoReID is a subset of the [DukeMTMC](http://vision.cs.duke.edu/DukeMTMC/) for video-based person re-identification.
 
 We crop pedestrian images from the videos for 12 frames every second to generate a tracklet. The dataset is split following 
 the protocol in [DukeMTMC-reID](https://github.com/layumi/DukeMTMC-reID_evaluation), i.e., 702 identities for training, 702 
@@ -14,29 +15,66 @@ In the testing set, we pick one query tracklet for each ID in each camera and pu
 | --------   | -----  |
 |./train_split  | The training tracklets. It contains 702 identities.|
 |./query_split  | The query tracklets. Each of them is from different identities in different cameras.|
-|./gallery_split  | The gallery_split tracklets.|
+|./gallery_split  | The gallery_split tracklets. It contains 702 gallery identities and 408 distractors.|
 
-**Directory Structure.** Followings is the directory structure for DukeMTMC-VideoReID. 
+### Directory Structure. 
+Followings are the directory structure for DukeMTMC-VideoReID. 
 > Splits
 >> Person ids
 >>> Tracklet ids
->>>> Frame images
+>>>> Frame bounding box images
 
+For example, for one frame image `train_split/0001/0003/0001C6F0099X30823.jpg`, `train_split`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, tracklet id, and the image frame name, respectively.
 
-**Naming Rules.** For frame "0001C6F0099X30823.jpg" from tracklet id 0003 of person id 0001,
-"0001" is the identity. "C6" indicate it from Camera 6. "F0099" means it is the 99th frame in the tracklet. 
-"X30823" is the 30823th frame in the video of Camera 6.
+**Naming Rules for image file.** 
+For the frame bounding box image `0001C6F0099X30823.jpg`, "0001" is the identity. "C6" indicate Camera 6. "F0099" means it is the 99th frame within the tracklet. "X30823" is the 30823th frame in the whole video of Camera 6.
 
 ### Download Dataset
 
 You can download the DukeMTMC-VideoReID dataset from 
 [[Google Drive]](https://drive.google.com/open?id=1JBrffnNTZufQ-hRYr9I8FtxeGqDkud1r), 
-[[BaiduYun]](https://pan.baidu.com/),
-or [[Direct Link]](http://45.62.126.139:8080/dukemtmc_videoReID.zip).
+[[BaiduYun]](https://pan.baidu.com/), or
+[[Direct Link]](http://45.62.126.139:8080/dukemtmc_videoReID.zip).
 
 
-### Baseline
-We will release the baseline code soon.
+## Training Baseline model
+
+### ETAP-Net
+The baseline model is an end-to-end ResNet-50 model with temporal average pooling (ETAP-Net).
+
+More details about the ETAP-Net is illustrated in [Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning](https://yu-wu.net/pdf/CVPR2018_Exploit-Unknown-Gradually.pdf).
+
+
+### Dependencies
+- Python 3.6
+- PyTorch (version >= 0.2.0)
+- h5py, scikit-learn, metric-learn, tqdm
+
+### Run
+Move the downloaded dataset file `dukemtmc_videoReID.zip` to `./data/` and unzip here.
+
+```shell
+python3 run.py --dataset dukemtmc_videoReID --logs_dir logs/dukemtmc_videoReID_baseline/ --max_frames 900 --batch_size 16
+```
+
+### Results on DukeMTMC-VideoReID
+
+<table>
+   <tr>
+      <td>Method</td>
+      <td>Rank-1</td>
+      <td>Rank-5</td>
+      <td>Rank-20</td>
+      <td>mAP</td>
+   </tr>
+   <tr>
+      <td>ETAP-Net</td>
+      <td>83.62 </td>
+      <td>94.59</td>
+      <td>97.58</td>
+      <td>78.34</td>
+   </tr>
+</table>
 
 ### References
 ```
@@ -59,3 +97,4 @@ If you use this dataset, please also cite the original DukeMTMC dataset accordin
 ```
 ### License
 Please refer to the license file for [DukeMTMC-VideoReID](https://github.com/Yu-Wu/DukeMTMC-VideoReID/blob/master/LICENSE_DukeMTMC-VideoReID.txt) and [DukeMTMC](https://github.com/Yu-Wu/DukeMTMC-VideoReID/blob/master/LICENSE_DukeMTMC.txt).
+

@@ -1,0 +1,43 @@
+ATTRIBUTION PROTOCOL
+
+If you use the DukeMTMC-VideoReID data or any data derived from it, please cite the original work as follows:
+
+
+@inproceedings{wu2018cvpr_oneshot,
+  title = {Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning},
+  author = {Wu, Yu and Lin, Yutian and Dong, Xuanyi and Yan, Yan and Ouyang, Wanli and Yang, Yi},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2018}
+}
+
+and include this license and attribution protocol within any derivative work.
+
+
+If you use the DukeMTMC data or any data derived from it, please cite the original work as follows:
+
+@inproceedings{ristani2016MTMC,
+  title =        {Performance Measures and a Data Set for Multi-Target, Multi-Camera Tracking},
+  author =       {Ristani, Ergys and Solera, Francesco and Zou, Roger and Cucchiara, Rita and Tomasi, Carlo},
+  booktitle =    {European Conference on Computer Vision workshop on Benchmarking Multi-Target Tracking},
+  year =         {2016}
+}
+
+and include this license and attribution protocol within any derivative work.
+
+
+The DukeMTMC-VideoReID dataset is derived from DukeMTMC dataset (http://vision.cs.duke.edu/DukeMTMC/).
+
+The DukeMTMC-VideoReID dataset is made available under the Open Data Commons Attribution License (https://opendatacommons.org/licenses/by/1.0/) and for academic use only.
+
+READABLE SUMMARY OF Open Data Commons Attribution License 
+
+You are free:
+
+    To Share: To copy, distribute and use the database.
+    To Create: To produce works from the database.
+    To Adapt: To modify, transform and build upon the database.
+
+As long as you:
+
+    Attribute: You must attribute any public use of the database, or works produced from the database, in the manner specified in the license. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database.
