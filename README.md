@@ -17,7 +17,7 @@ You can download the DukeMTMC-VideoReID dataset from
 | --------   | -----  |
 |./train  | The training video tracklets. It contains 702 identities.|
 |./query  | The query video tracklets. Each of them is from different identities in different cameras.|
-|./gallery  | The gallery_split video tracklets. It contains 702 gallery identities and 408 distractors.|
+|./gallery  | The gallery video tracklets. It contains 702 gallery identities and 408 distractors.|
 
 ### Directory Structure
 Followings are the directory structure for DukeMTMC-VideoReID. 
@@ -26,7 +26,7 @@ Followings are the directory structure for DukeMTMC-VideoReID.
 >>> Video tracklet ids
 >>>> Frame bounding box images
 
-For example, for one frame image `train_split/0001/0003/0001C6F0099X30823.jpg`, `train_split`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, video tracklet id, and image frame name, respectively.
+For example, for one frame image `train/0001/0003/0001C6F0099X30823.jpg`, `train`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, video tracklet id, and image frame name, respectively.
 
 **Naming Rules for image file.** 
 For the frame bounding box image `0001C6F0099X30823.jpg`, "0001" is the identity. "C6" indicate Camera 6. "F0099" means it is the 99th frame within the tracklet. "X30823" is the 30823th frame in the whole video of Camera 6.
@@ -46,10 +46,10 @@ More details about the ETAP-Net can be found in [Exploit the Unknown Gradually: 
 - h5py, scikit-learn, metric-learn, tqdm
 
 ### Run
-Move the downloaded dataset file `dukemtmc_videoReID.zip` to `./data/` and unzip here.
+Move the downloaded dataset file `DukeMTMC-VideoReID.zip` to `./data/` and unzip here.
 
 ```shell
-python3 run.py --dataset dukemtmc_videoReID --logs_dir logs/dukemtmc_videoReID_baseline/ --max_frames 900 --batch_size 16
+python3 run.py --dataset DukeMTMC-VideoReID --logs_dir logs/DukeMTMC-VideoReID_baseline/ --max_frames 900 --batch_size 16
 ```
 
 ### Results on DukeMTMC-VideoReID

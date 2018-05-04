@@ -7,7 +7,7 @@ from .dukemtmc_videoReID import DukeMTMC_VideoReID
 
 __factory = {
     'mars': Mars,
-    'dukemtmc_videoReID': DukeMTMC_VideoReID
+    'DukeMTMC-VideoReID': DukeMTMC_VideoReID
 }
 
 

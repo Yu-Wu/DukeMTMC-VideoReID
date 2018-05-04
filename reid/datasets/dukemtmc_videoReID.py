@@ -9,7 +9,7 @@ from ..utils.serialization import write_json
 class DukeMTMC_VideoReID(Dataset):
     def __init__(self, root, split_id=0, num_val=100, download=True):
         super(self.__class__, self).__init__(root, split_id=split_id)
-        self.name="dukemtmc_videoReID"
+        self.name="DukeMTMC-VideoReID"
         self.num_cams = 8
 
         if download:
@@ -67,9 +67,9 @@ class DukeMTMC_VideoReID(Dataset):
             return pids, vids
 
         print("begin to preprocess mars dataset")
-        trainval_pids, _ = register('train_split')
-        gallery_pids, gallery_vids = register('gallery_split')
-        query_pids, query_vids = register('query_split')
+        trainval_pids, _ = register('train')
+        gallery_pids, gallery_vids = register('gallery')
+        query_pids, query_vids = register('query')
         #assert query_pids <= gallery_pids
         assert trainval_pids.isdisjoint(gallery_pids)
 
