@@ -40,7 +40,7 @@ For the frame bounding box image `0001C6F0099X30823.jpg`, "0001" is the identity
 ### ETAP-Net
 The baseline model is an end-to-end ResNet-50 model with temporal average pooling (ETAP-Net).
 
-More details about the ETAP-Net is illustrated in [Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning](https://yu-wu.net/pdf/CVPR2018_Exploit-Unknown-Gradually.pdf).
+More details about the ETAP-Net can be found in [Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning](https://yu-wu.net/pdf/CVPR2018_Exploit-Unknown-Gradually.pdf).
 
 
 ### Dependencies
