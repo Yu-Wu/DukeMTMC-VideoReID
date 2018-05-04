@@ -10,6 +10,11 @@ training, and 445,764 frames of 2,636 tracklets for testing and distractors.
 In the testing set, we pick one query tracklet for each ID in each camera and put the remaining tracklets in the gallery. 
 
 
+### Download Dataset
+You can download the DukeMTMC-VideoReID dataset from
+[[Google Drive]](https://drive.google.com/open?id=1T5bmWetLSvLjR30hAp8S54G2ERs81Pkg) [[BaiduYun]](https://pan.baidu.com/s/1h5dV9QJLEIaa76begG-nOw) [[Direct Link]](http://45.62.126.139/dukemtmc_videoReID.zip).
+
+
 ### About Dataset
 |File  | Description | 
 | --------   | -----  |
@@ -24,17 +29,10 @@ Followings are the directory structure for DukeMTMC-VideoReID.
 >>> Tracklet ids
 >>>> Frame bounding box images
 
-For example, for one frame image `train_split/0001/0003/0001C6F0099X30823.jpg`, `train_split`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, tracklet id, and the image frame name, respectively.
+For example, for one frame image `train_split/0001/0003/0001C6F0099X30823.jpg`, `train_split`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, tracklet id, and image frame name, respectively.
 
 **Naming Rules for image file.** 
 For the frame bounding box image `0001C6F0099X30823.jpg`, "0001" is the identity. "C6" indicate Camera 6. "F0099" means it is the 99th frame within the tracklet. "X30823" is the 30823th frame in the whole video of Camera 6.
-
-### Download Dataset
-
-You can download the DukeMTMC-VideoReID dataset from 
-[[Google Drive]](https://drive.google.com/open?id=1JBrffnNTZufQ-hRYr9I8FtxeGqDkud1r), 
-[[BaiduYun]](https://pan.baidu.com/), or
-[[Direct Link]](http://45.62.126.139:8080/dukemtmc_videoReID.zip).
 
 
 ## Training Baseline model
@@ -96,5 +94,5 @@ If you use this dataset, please also cite the original DukeMTMC dataset accordin
 }
 ```
 ### License
-Please refer to the license file for [DukeMTMC-VideoReID](https://github.com/Yu-Wu/DukeMTMC-VideoReID/blob/master/LICENSE_DukeMTMC-VideoReID.txt) and [DukeMTMC](https://github.com/Yu-Wu/DukeMTMC-VideoReID/blob/master/LICENSE_DukeMTMC.txt).
+Please refer to the license file for [DukeMTMC-VideoReID](https://github.com/Yu-Wu/DukeMTMC-VideoReID/blob/master/LICENSES/LICENSE_DukeMTMC-VideoReID.txt) and [DukeMTMC](https://github.com/Yu-Wu/DukeMTMC-VideoReID/blob/master/LICENSES/LICENSE_DukeMTMC.txt).
 
