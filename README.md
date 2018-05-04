@@ -1,35 +1,32 @@
 
 # DukeMTMC-VideoReID
 
-DukeMTMC-VideoReID is a subset of the [DukeMTMC](http://vision.cs.duke.edu/DukeMTMC/) for video-based person re-identification.
+DukeMTMC-VideoReID [1] is a subset of the [DukeMTMC](http://vision.cs.duke.edu/DukeMTMC/) tracking dataset [2] for video-based person re-identification.
 
-We crop pedestrian images from the videos for 12 frames every second to generate a tracklet. The dataset is split following 
-the protocol in [DukeMTMC-reID](https://github.com/layumi/DukeMTMC-reID_evaluation), i.e., 702 identities for training, 702 
-identities for testing, and 408 identities as the distractors. Totally, we generate 369,656 frames of 2,196 tracklets for 
-training, and 445,764 frames of 2,636 tracklets for testing and distractors.
-In the testing set, we pick one query tracklet for each ID in each camera and put the remaining tracklets in the gallery. 
+
+The dataset consists of 702 identities for training, 702 identities for testing, and 408 identities as distractors. In total there are 2,196 videos for training and 2,636 videos for testing. Each video contains person images sampled every 12 frames. During testing, a video for each ID is used as the query and the remaining videos are placed in the gallery.
 
 
 ### Download Dataset
 You can download the DukeMTMC-VideoReID dataset from
-[[Google Drive]](https://drive.google.com/open?id=1T5bmWetLSvLjR30hAp8S54G2ERs81Pkg) [[BaiduYun]](https://pan.baidu.com/s/1axx55Z7XDzc95i0yGr4ItQ) [[Direct Link]](http://45.62.126.139/dukemtmc_videoReID.zip).
+[[Google Drive]](https://drive.google.com/open?id=1WVjJ7PwhakF40a-BgOs1Jr_a17O38eOz) [[BaiduYun]](https://pan.baidu.com/s/1axx55Z7XDzc95i0yGr4ItQ) [[Direct Link]](http://45.62.126.139/DukeMTMC-VideoReID.zip).
 
 
 ### About Dataset
-|File  | Description | 
+|Directory  | Description | 
 | --------   | -----  |
-|./train_split  | The training tracklets. It contains 702 identities.|
-|./query_split  | The query tracklets. Each of them is from different identities in different cameras.|
-|./gallery_split  | The gallery_split tracklets. It contains 702 gallery identities and 408 distractors.|
+|./train  | The training video tracklets. It contains 702 identities.|
+|./query  | The query video tracklets. Each of them is from different identities in different cameras.|
+|./gallery  | The gallery_split video tracklets. It contains 702 gallery identities and 408 distractors.|
 
 ### Directory Structure
 Followings are the directory structure for DukeMTMC-VideoReID. 
 > Splits
 >> Person ids
->>> Tracklet ids
+>>> Video tracklet ids
 >>>> Frame bounding box images
 
-For example, for one frame image `train_split/0001/0003/0001C6F0099X30823.jpg`, `train_split`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, tracklet id, and image frame name, respectively.
+For example, for one frame image `train_split/0001/0003/0001C6F0099X30823.jpg`, `train_split`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, video tracklet id, and image frame name, respectively.
 
 **Naming Rules for image file.** 
 For the frame bounding box image `0001C6F0099X30823.jpg`, "0001" is the identity. "C6" indicate Camera 6. "F0099" means it is the 99th frame within the tracklet. "X30823" is the 30823th frame in the whole video of Camera 6.
@@ -75,6 +72,11 @@ python3 run.py --dataset dukemtmc_videoReID --logs_dir logs/dukemtmc_videoReID_b
 </table>
 
 ### References
+- [1] Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning. Wu et al., CVPR 2018
+ 
+- [2] Performance Measures and a Data Set for Multi-Target, Multi-Camera Tracking. Ristani et al., ECCVWS 2016
+
+Please cite the following two papers if this dataset helps your research.
 ```
 @inproceedings{wu2018cvpr_oneshot,
   title = {Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning},
@@ -83,9 +85,7 @@ python3 run.py --dataset dukemtmc_videoReID --logs_dir logs/dukemtmc_videoReID_b
   month = {June},
   year = {2018}
 }
-```
-If you use this dataset, please also cite the original DukeMTMC dataset accordingly:
-```
+
 @inproceedings{ristani2016MTMC,
   title = {Performance Measures and a Data Set for Multi-Target, Multi-Camera Tracking},
   author = {Ristani, Ergys and Solera, Francesco and Zou, Roger and Cucchiara, Rita and Tomasi, Carlo},
