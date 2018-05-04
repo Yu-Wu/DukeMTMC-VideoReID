@@ -12,7 +12,7 @@ In the testing set, we pick one query tracklet for each ID in each camera and pu
 
 ### Download Dataset
 You can download the DukeMTMC-VideoReID dataset from
-[[Google Drive]](https://drive.google.com/open?id=1T5bmWetLSvLjR30hAp8S54G2ERs81Pkg) [[BaiduYun]](https://pan.baidu.com/s/1h5dV9QJLEIaa76begG-nOw) [[Direct Link]](http://45.62.126.139/dukemtmc_videoReID.zip).
+[[Google Drive]](https://drive.google.com/open?id=1T5bmWetLSvLjR30hAp8S54G2ERs81Pkg) [[BaiduYun]](https://pan.baidu.com/s/1axx55Z7XDzc95i0yGr4ItQ) [[Direct Link]](http://45.62.126.139/dukemtmc_videoReID.zip).
 
 
 ### About Dataset
@@ -22,7 +22,7 @@ You can download the DukeMTMC-VideoReID dataset from
 |./query_split  | The query tracklets. Each of them is from different identities in different cameras.|
 |./gallery_split  | The gallery_split tracklets. It contains 702 gallery identities and 408 distractors.|
 
-### Directory Structure. 
+### Directory Structure
 Followings are the directory structure for DukeMTMC-VideoReID. 
 > Splits
 >> Person ids
