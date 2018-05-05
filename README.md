@@ -9,7 +9,7 @@ The dataset consists of 702 identities for training, 702 identities for testing,
 
 ### Download Dataset
 You can download the DukeMTMC-VideoReID dataset from
-[[Google Drive]](https://drive.google.com/open?id=1WVjJ7PwhakF40a-BgOs1Jr_a17O38eOz) [[BaiduYun]](https://pan.baidu.com/s/1axx55Z7XDzc95i0yGr4ItQ) [[Direct Link]](http://45.62.126.139/DukeMTMC-VideoReID.zip).
+[[Direct Link]](http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-VideoReID.zip)  [[Google Drive]](https://drive.google.com/open?id=1WVjJ7PwhakF40a-BgOs1Jr_a17O38eOz)  [[BaiduYun]](https://pan.baidu.com/s/1Y_unlSqZqSdU3SeBqQmE5A)   [[Direct Link 2]](http://45.62.126.139/DukeMTMC-VideoReID.zip).
 
 
 ### About Dataset
