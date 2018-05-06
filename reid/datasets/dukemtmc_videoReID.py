@@ -54,7 +54,7 @@ class DukeMTMC_VideoReID(Dataset):
                     frame_list = []
                     for fname in fnames:
                         count += 1
-                        cam = int(fname[5]) - 1
+                        cam = int(fname[6]) - 1
                         assert 0 <= pid <= 7140
                         assert 0 <= cam <= 8
                         pids.add(pid)

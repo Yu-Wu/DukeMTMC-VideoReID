@@ -9,7 +9,7 @@ The dataset consists of 702 identities for training, 702 identities for testing,
 
 ### Download Dataset
 You can download the DukeMTMC-VideoReID dataset from
-[[Direct Link]](http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-VideoReID.zip)  [[Google Drive]](https://drive.google.com/open?id=1WVjJ7PwhakF40a-BgOs1Jr_a17O38eOz)  [[BaiduYun]](https://pan.baidu.com/s/1Y_unlSqZqSdU3SeBqQmE5A)   [[Direct Link 2]](http://45.62.126.139/DukeMTMC-VideoReID.zip).
+[[Direct Link]](http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-VideoReID.zip)  [[Google Drive]](https://drive.google.com/open?id=1Fdu5GK-C7P8M9QiLbiQNyT_RUFt8oFco)  [[BaiduYun]](https://pan.baidu.com/s/1Y_unlSqZqSdU3SeBqQmE5A)   [[Direct Link 2]](http://45.62.126.139/DukeMTMC-VideoReID.zip).
 
 
 ### About Dataset
@@ -26,11 +26,10 @@ Followings are the directory structure for DukeMTMC-VideoReID.
 >>> Video tracklet ids
 >>>> Frame bounding box images
 
-For example, for one frame image `train/0001/0003/0001C6F0099X30823.jpg`, `train`, `0001`, `0003`, and `0001C6F0099X30823.jpg` are the split, person id, video tracklet id, and image frame name, respectively.
+For example, for one frame image `train/0001/0003/0001_C6_F0099_X30823.jpg`, `train`, `0001`, `0003`, and `0001_C6_F0099_X30823.jpg` are the split, person id, video tracklet id, and image frame name, respectively.
 
 **Naming Rules for image file.** 
-For the frame bounding box image `0001C6F0099X30823.jpg`, "0001" is the identity. "C6" indicate Camera 6. "F0099" means it is the 99th frame within the tracklet. "X30823" is the 30823th frame in the whole video of Camera 6.
-
+For most frame bounding box images, e.g. `0001_C6_F0099_X30823.jpg`, "0001" is the identity. "C6" indicate Camera 6. "F0099" means it is the 99th frame within the tracklet. "X" indicates it is a normal image (otherwise, "D" for distractors) and " 30823" is the 30823th frame in the whole video of Camera 6.
 
 ## Training Baseline model
 
