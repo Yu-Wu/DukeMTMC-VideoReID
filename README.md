@@ -9,7 +9,7 @@ The dataset consists of 702 identities for training, 702 identities for testing,
 
 ### Download Dataset
 You can download the DukeMTMC-VideoReID dataset from
-[[Direct Link]](http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-VideoReID.zip)  [[Google Drive]](https://drive.google.com/open?id=1Fdu5GK-C7P8M9QiLbiQNyT_RUFt8oFco)  [[BaiduYun]](https://pan.baidu.com/s/1Y_unlSqZqSdU3SeBqQmE5A)   [[Direct Link 2]](http://45.62.126.139/DukeMTMC-VideoReID.zip).
+[[Direct Link]](http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-VideoReID.zip)  [[Google Drive]](https://drive.google.com/open?id=1Fdu5GK-C7P8M9QiLbiQNyT_RUFt8oFco)  [[BaiduYun]](https://pan.baidu.com/s/1qL39rnjTjyzjqaD-Wuv8KQ).
 
 
 ### About Dataset
@@ -36,7 +36,7 @@ For most frame bounding box images, e.g. `0001_C6_F0099_X30823.jpg`, "0001" is t
 ### ETAP-Net
 The baseline model is an end-to-end ResNet-50 model with temporal average pooling (ETAP-Net).
 
-More details about the ETAP-Net can be found in [Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning](https://yu-wu.net/pdf/CVPR2018_Exploit-Unknown-Gradually.pdf).
+More details about the ETAP-Net can be found in our CVPR2018 paper [Exploit the Unknown Gradually: One-Shot Video-Based Person Re-Identification by Stepwise Learning](https://yu-wu.net/pdf/CVPR2018_Exploit-Unknown-Gradually.pdf).
 
 
 ### Dependencies
