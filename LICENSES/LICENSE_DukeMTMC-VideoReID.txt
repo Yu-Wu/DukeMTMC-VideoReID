@@ -1,6 +1,6 @@
 ATTRIBUTION PROTOCOL
 
-If you use the DukeMTMC-VideoReID data or any data derived from it, please cite the original work as follows:
+If you use the DukeMTMC-VideoReID data or any data derived from it, please cite our work as follows:
 
 
 @inproceedings{wu2018cvpr_oneshot,
@@ -28,16 +28,20 @@ and include this license and attribution protocol within any derivative work.
 
 The DukeMTMC-VideoReID dataset is derived from DukeMTMC dataset (http://vision.cs.duke.edu/DukeMTMC/).
 
-The DukeMTMC-VideoReID dataset is made available under the Open Data Commons Attribution License (https://opendatacommons.org/licenses/by/1.0/) and for academic use only.
+The DukeMTMC-VideoReID dataset is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt)
 
-READABLE SUMMARY OF Open Data Commons Attribution License 
+You are free to:
 
-You are free:
+    Share — copy and redistribute the material in any medium or format
+    Adapt — remix, transform, and build upon the material 
 
-    To Share: To copy, distribute and use the database.
-    To Create: To produce works from the database.
-    To Adapt: To modify, transform and build upon the database.
+Under the following terms:
 
-As long as you:
+    Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-    Attribute: You must attribute any public use of the database, or works produced from the database, in the manner specified in the license. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database.
+    NonCommercial — You may not use the material for commercial purposes.
+
+    ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+    No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
