@@ -103,4 +103,3 @@ Please refer to the license file for [DukeMTMC-VideoReID](https://github.com/Yu-
 If you have any questions about this dataset, please do not hesitate to contact me. 
 
 [Yu Wu's Homepage](https://yu-wu.net)
-[Email](yu.wu-3@student.uts.edu.au)
