@@ -8,10 +8,8 @@ The dataset consists of 702 identities for training, 702 identities for testing,
 
 
 ### Download Dataset
-**Data Offline.** Since the privacy implications of the data set are being considered, we have to offline the download link for DukeMTMC-VideoReID. We are very sorry about it. There is currently no clear indication as to when, if ever, the data set will be allowed to be restored.
+Please refer to https://github.com/Yu-Wu/DukeMTMC-VideoReID/issues/7
 
-You may try the following download link to check whether the data set is restored officially.
-http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-VideoReID.zip
 
 
 ### About Dataset
